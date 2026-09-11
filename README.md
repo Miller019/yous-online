@@ -1,24 +1,25 @@
-# Yous Online — site oficial
+<div align="center">
 
-Versão estática completa e pronta para publicar no GitHub Pages.
+__  __                  ____        ___
+\ \/ /___  __  _______ / __ \____  / (_)___  ___
+ \  / __ \/ / / / ___// / / / __ \/ / / __ \/ _ \
+ / / /_/ / /_/ (__  )/ /_/ / / / / / / / / /  __/
+/_/\____/\__,_/____/ \____/_/ /_/_/_/_/ /_/\___/
 
-## Publicar no GitHub Pages
+A living 2D MMORPG built by players.
 
-1. Crie um repositório chamado `yous-online` no GitHub.
-2. Envie **todos** os arquivos desta pasta, incluindo a pasta `assets`.
-3. Abra **Settings → Pages** no repositório.
-4. Em **Build and deployment**, selecione **Deploy from a branch**.
-5. Escolha a branch **main**, a pasta **/(root)** e clique em **Save**.
-6. O endereço padrão será `https://SEU-USUARIO.github.io/yous-online/`.
+Official Website • Patreon • Discord
 
-## Domínio próprio (opcional)
+</div>
 
-Você pode comprar um domínio futuramente e conectá-lo em **Settings → Pages → Custom domain**. Não será necessário refazer o site.
+About
 
-## Estrutura
+This repository contains the official website for Yous Online, an independent 2D MMORPG currently in development.
 
-- `index.html`: página principal.
-- `assets/`: logos, personagens, bandeiras, nuvens e demais imagens.
-- `.nojekyll`: impede que o GitHub Pages altere a estrutura dos arquivos estáticos.
+The website is hosted through GitHub Pages. Updates pushed to the main branch are published automatically within a few minutes.
 
-> Importante: não envie apenas o `index.html`. A pasta `assets` precisa ficar ao lado dele.
+The assets folder contains the characters, artwork, logos and other visual elements used by the website. Keep it alongside index.html when updating the project.
+
+Contact
+
+contact@yousonline.quest
