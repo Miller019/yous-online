@@ -424,14 +424,53 @@
     width:76px; height:76px;
     margin:0 auto 18px;
     display:flex; align-items:center; justify-content:center;
+    position:relative;
+    overflow:hidden;
     background:radial-gradient(circle at 50% 40%, #3a4f31 0%, var(--forest-deep) 72%);
     border:3px solid var(--gold);
     border-radius:50%;
     box-shadow:inset 0 0 0 2px rgba(0,0,0,.4), 3px 3px 0 rgba(0,0,0,.35);
   }
   .sprite-medallion img{
-    width:44px; height:auto;
-    filter:drop-shadow(1px 1px 0 rgba(0,0,0,.5));
+    display:none;
+  }
+
+  .sprite-medallion::after{
+    content:"";
+    width:48px;
+    height:48px;
+    flex:0 0 48px;
+    background-repeat:no-repeat;
+    background-size:192px 48px;
+    image-rendering:pixelated;
+    image-rendering:-moz-crisp-edges;
+    animation:vocation-walk .64s steps(4) infinite;
+    filter:drop-shadow(2px 2px 0 rgba(0,0,0,.5));
+  }
+
+  .vocation-card:nth-child(1) .sprite-medallion::after{
+    background-image:url("assets/mago-walk-right.png");
+  }
+  .vocation-card:nth-child(2) .sprite-medallion::after{
+    background-image:url("assets/arqueiro-walk-right.png");
+  }
+  .vocation-card:nth-child(3) .sprite-medallion::after{
+    background-image:url("assets/guerreiro-walk-right.png");
+  }
+  .vocation-card:nth-child(4) .sprite-medallion::after{
+    background-image:url("assets/curandeiro-walk-right.png");
+  }
+
+  @keyframes vocation-walk{
+    from{ background-position:0 0; }
+    to{ background-position:-192px 0; }
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    .sprite-medallion::after{
+      animation:none;
+      background-position:0 0;
+    }
   }
 
   .vocation-card h3{
