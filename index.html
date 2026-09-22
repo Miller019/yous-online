@@ -1129,6 +1129,14 @@
     .btn{ width:100%; justify-content:center; max-width:320px; }
   }
 
+
+/* Estandarte de cadastro: aviso visual, sem link enquanto indisponível. */
+.hero-signup-banner{position:absolute;z-index:3;top:90px;right:4.8%;width:clamp(110px,12.5vw,250px);height:auto;image-rendering:pixelated;pointer-events:none;}
+@media(max-width:700px){
+ .hero-stage{height:720px;min-height:720px;aspect-ratio:auto;}
+ .hero-main-logo{top:180px;width:min(78vw,430px);}
+ .hero-signup-banner{top:335px;right:50%;transform:translateX(50%);width:112px;}
+}
 </style>
 </head>
 <body>
@@ -1169,6 +1177,7 @@
         <img class="hero-cloud cloud-two" src="assets/cloud-pixel.png" alt="" aria-hidden="true">
         <img class="hero-cloud cloud-three" src="assets/cloud-pixel.png" alt="" aria-hidden="true">
         <img class="hero-cloud cloud-four" src="assets/cloud-pixel-large.png" alt="" aria-hidden="true">
+        <img class="hero-signup-banner" src="assets/estandarte-cadastro.png" width="793" height="1983" alt="Crie sua conta em breve" data-i18n-alt="signupBannerAlt" decoding="async">
         <img class="hero-main-logo" src="assets/yous-logo-trimmed.png" alt="Yous Online">
       </div>
       <div class="hero-fade" aria-hidden="true"></div>
@@ -1381,6 +1390,7 @@
           navDevlog: 'Devlog',
           navSupport: 'Apoie',
           joinDiscord: 'Entrar no Discord',
+          signupBannerAlt: 'Crie sua conta em breve',
           heroAlt: 'Cenário em pixel art com céu, montanhas, campos verdes e água',
           battleBannerAlt: 'Batalha em pixel art contra uma aranha gigante no mundo de Yous Online',
           tagline: 'O MMORPG 2D construído por jogadores que nunca desistiram do endgame.',
@@ -1445,6 +1455,7 @@
           navDevlog: 'Devlog',
           navSupport: 'Support Us',
           joinDiscord: 'Join our Discord',
+          signupBannerAlt: 'Account registration coming soon',
           heroAlt: 'Pixel-art landscape with sky, mountains, green fields, and water',
           battleBannerAlt: 'Pixel-art battle against a giant spider in the world of Yous Online',
           tagline: 'The 2D MMORPG built by players who never gave up on the endgame.',
